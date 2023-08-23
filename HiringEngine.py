@@ -50,4 +50,8 @@ def template():
 
         
 if __name__ =="__main__":
-    app.run()
+    # Use Gunicorn as the server
+    from gunicorn.app.wsgiapp import WSGIApplication
+    app_instance = WSGIApplication("%s:app" % __name__)
+    app_instance.run()
+    #app.run()
