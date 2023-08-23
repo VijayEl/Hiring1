@@ -3,7 +3,9 @@ from Functions import classificationModel
 import pandas as pd
 from fileinput import filename
 
-trainData = pd.read_excel('C:/RenegeAnalytics/RenegeAnalytics/Data/RenegeData.xlsx')
+#trainData = pd.read_excel('C:/RenegeAnalytics/RenegeAnalytics/Data/RenegeData.xlsx')
+trainData = pd.read_excel('Data/RenegeData.xlsx')
+
 traindata=trainData.copy()
 #testData = pd.read_excel('C:/Users/lgorle/Desktop/flaskapi/HiringEngine_Flask/Data/TestData.xlsx')
 #Finalmodel=pd.read_pickle('C:/HiringEngine/savedmodel/Randomforest.pkl')
