@@ -54,4 +54,4 @@ if __name__ =="__main__":
     #from gunicorn.app.wsgiapp import WSGIApplication
     #app_instance = WSGIApplication("%s:app" % __name__)
     #app_instance.run()
-    app.run(host="0.0.0.0", port=int("5000"), debug=True)
+    app.run()
